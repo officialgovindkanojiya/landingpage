@@ -1,0 +1,264 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #292929;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: none; /* Initially hide for smaller screens */
+}
+
+.nav-list.active {
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #ff6b6b;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle.active .menu-icon:nth-child(2) {
+    opacity: 0;
+    transform: translateY(-6px);
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list li {
+        margin: 0 15px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* Reset some default styles */
+ 
+ 
+
+/* updated */
+
+
+/* Hero section */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+    position: relative;
+}
+
+.hero .content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 40px;
+    font-size: 1.3rem;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4c4c;
+}
+
+/* Features section */
+.features {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.feature img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Testimonials section */
+.testimonials {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial {
+    width: 40%;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    color: #777;
+}
+
+/* Contact section */
+.contact {
+    padding: 100px 0;
+    background-color: #292929;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 12px 40px;
+    font-size: 1.3rem;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*/
+
